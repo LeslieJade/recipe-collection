@@ -1,0 +1,159 @@
+/**BASE STYLES**/
+body {
+  background: #daf7f6;
+  color: #3b3b3b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/**HEADER**/
+header {
+  background: #ffffff;
+  text-align: center;
+  }
+
+header img {
+ margin-right: 15px;
+ }
+
+header h1 {
+  color: #f16059;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin: 0;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+
+/**MAIN**/
+main {
+ margin: 0 auto;
+  width: 1000px;
+}
+
+main h1 {
+  color: #f16059;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+h2 span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.columns {
+  overflow: auto;
+}
+
+.directions {
+  float: left;
+  width: 240px;
+}
+
+.directions ol {
+    line-height: 24px;
+    padding-left: 15px;
+}
+
+.ingredients {
+  float: left;
+  margin-right: 10px;
+  width: 205px;
+}
+
+.ingredients ul {
+  line-height: 24px;
+  list-style-type: square;
+  padding-left: 15px;
+}
+
+h3 {
+  border-bottom: 1px solid #3b3b3b;
+  border-top: 1px solid #3b3b3b;
+  color: #f16059;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding: 2px 0 2px 5px;
+  text-transform: uppercase;
+}
+
+.card {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  overflow: auto
+}
+
+.image {
+  float: left;
+  height: 550px;
+  width: 500px;
+}
+
+.times {
+  border: 1px solid #3b3b3b;
+  margin-bottom: 1px;
+  overflow: auto;
+}
+
+.times img {
+  float: left;
+  height: auto;
+  padding: 12px 5px 5px 0;
+  width: 15px;
+}
+
+.times div {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 6px;
+  width: 33.3333%;
+}
+
+.times .cook {
+  border-left: 1px solid #3b3b3b;
+  border-right: 1px solid #3b3b3b;
+}
+
+.recipe {
+  background: #ffffff;
+  box-sizing: border-box;
+  float: left;
+  height: 550px;
+  padding: 20px;
+  width: 500px;
+}
+
+#cookies .image {
+  background: url('../img/sugar-cookies.jpg');
+  background-size: cover;
+}
+
+#pesto .image {
+  background: url('../img/pesto-pasta.jpg');
+  background-size: cover;
+}
+
+#salad .image {
+  background: url('../img/strawberry-salad.jpg');
+  background-size: cover;
+}
+
+/***FOOTER***/
+footer {
+  padding: 5px 0 25px 0;
+}
+
+h4 {
+  font-weight: 200;
+  text-align: center;
+}
