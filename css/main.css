@@ -1,16 +1,27 @@
-/**BASE STYLES**/
-body {
-  background: rgba(40,189,189, 0.80);
-  color: #3b3b3b;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+/***BASE STYLES***/
+html {
+  font-size: 14px;
+  width: 100%;
 }
 
-/**HEADER**/
+body {
+  align-items: center;
+  background: rgba(40,189,189, 0.80);
+  color: #3b3b3b;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  width: 100%;
+}
+
+/***HEADER***/
 header {
+  align-items: center;
   background: #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   }
 
 header img {
@@ -19,30 +30,36 @@ header img {
 
 header h1 {
   color: #f16059;
-  display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 48px;
-  margin: 0;
-  padding: 40px 0;
+  font-size: 2.5em;
+  line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
 }
 
-/**MAIN**/
+/***MAIN***/
 main {
- margin: 0 auto;
-  width: 1000px;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 90%;
 }
 
 main h1 {
   color: #f16059;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
+  line-height: 24px;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 1em;
+  padding-top: 5px;
   text-transform: uppercase;
 }
 
@@ -51,30 +68,9 @@ h2 span {
   font-weight: 400;
 }
 
-.columns {
-  overflow: auto;
-}
-
-.directions {
-  float: left;
-  width: 240px;
-}
-
-.directions ol {
-    line-height: 24px;
-    padding-left: 15px;
-}
-
-.ingredients {
-  float: left;
-  margin-right: 10px;
-  width: 205px;
-}
-
-.ingredients ul {
-  line-height: 24px;
-  list-style-type: square;
-  padding-left: 15px;
+p {
+  text-align: center;
+  width: 90%;
 }
 
 h3 {
@@ -82,42 +78,65 @@ h3 {
   border-top: 1px solid #3b3b3b;
   color: #f16059;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 1em;
+  margin: 5px 0 0 0;
   padding: 2px 0 2px 5px;
+  text-align: center;
   text-transform: uppercase;
+  width: 95%;
 }
 
 .card {
+  align-items: center;
   box-shadow: 0 0 25px rgba(0,0,0, .50);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   margin-bottom: 25px;
   margin-top: 25px;
-  overflow: auto
+  max-width: 800px;
+  width: 100%;
 }
 
 .image {
-  float: left;
+  display: flex;
+  flex-flow: row wrap;
   height: 550px;
-  width: 500px;
+  width: 100%;
+}
+
+.recipe {
+  background: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 550px;
+  padding: 20px;
+  width: 100%;
 }
 
 .times {
+  align-items: center;
   border: 1px solid #3b3b3b;
-  margin-bottom: 1px;
-  overflow: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  width: 85%;
 }
 
 .times img {
   float: left;
-  height: auto;
-  padding: 12px 5px 5px 0;
+  height: 20px;
+  padding: 20px 10px 15px 5px;
   width: 15px;
 }
 
 .times div {
   box-sizing: border-box;
   float: left;
-  padding-left: 6px;
-  width: 33.3333%;
+  padding: 5px;
+  width: 33.333%;
 }
 
 .times .cook {
@@ -125,36 +144,77 @@ h3 {
   border-right: 1px solid #3b3b3b;
 }
 
-.recipe {
-  background: #ffffff;
-  box-sizing: border-box;
-  float: left;
-  height: 550px;
-  padding: 20px;
-  width: 500px;
+.ingredients, .directions {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.ingredients ul {
+  line-height: 24px;
+  list-style-type: square;
+}
+
+.directions ol {
+  line-height: 24px;
 }
 
 #salad .image {
   background: url('../img/strawberry-salad-01.jpg');
+  background-position: center;
   background-size: cover;
 }
 
 #pesto .image {
   background: url('../img/pesto-pasta.jpg');
+  background-position: center;
   background-size: cover;
 }
 
 #cookies .image {
   background: url('../img/sugar-cookies.jpg');
+  background-position: center;
   background-size: cover;
 }
 
 /***FOOTER***/
 footer {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   padding: 5px 0 25px 0;
+  width: 100%;
 }
 
 h4 {
   font-weight: 200;
   text-align: center;
+}
+
+/***TABLET LAYOUT***/
+@media all and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .ingredients, .directions {
+    align-items: center;
+    width: 49%;
+  }
+
+  .ingredients {
+    margin-right: 10px;
+  }
+}
+
+/***DESKTOP LAYOUT***/
+@media all and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
 }
